@@ -1,0 +1,18 @@
+html
+  head
+    title= title
+    link(rel="stylesheet" href="/css/style.css")
+  body
+    a(href="/") Return to the homepage
+    h2 Add a new record
+    form(action="/update-cobj" method="POST")
+      div
+        label(for="name") Name:
+        input(type="text" name="name" id="name")
+      div
+        label(for="species") Species:
+        input(type="text" name="species" id="species")
+      div
+        label(for="bio") Bio:
+        input(type="text" name="bio" id="bio")
+      button(type="submit") Submit
